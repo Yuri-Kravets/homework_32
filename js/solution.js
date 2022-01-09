@@ -39,7 +39,7 @@ ul.removeAttribute('data-dog-tail');
 // Task 2
 // let array = [1, 2, [1.1, 1.2, 1.3], 3];
  
-// generateList(array);
+
 
 // function generateList(array) {
 //     let s = "<ul>";
@@ -60,5 +60,25 @@ ul.removeAttribute('data-dog-tail');
 //     document.body.innerHTML = s;
 // }
 
+// generateList(array);
 
+// task 3
+const table = document.getElementById('table');
+
+function generateTab(row,col) {
+    const num = 0;
+
+    for (let i = 0;i < row;i++) {
+        const tr = document.createElement('tr');
+
+        for (let c = 1;c <= col;c++) {
+            const td = document.createElement('td');
+            td.innerHTML = i * 10 + c;
+            tr.append(td);
+
+        }
+        table.append(tr);
+    }
+}
+generateTab(10,10);
 })();
