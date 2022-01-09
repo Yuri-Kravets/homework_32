@@ -2,6 +2,8 @@
 
 
 (function() {
+
+    
 //task 1.1
 const ul = document.querySelector('ul');
 let arr = Array();
@@ -42,16 +44,17 @@ ul.removeAttribute('data-dog-tail');
 
 
 // function generateList(array) {
-//     let s = "<ul>";
+//     let s = '<ul>';
 //     const count = array.length;
+
 //     for (let i = 0; i < count; ++i) {
 //         let row = array[i];
 //         if (Array.isArray(row)) {
-//             s += "<li><ul>";
+//             s += '<li><ul>';
 //             for (let j = 0; j < row.length; ++j) {
 //                 s += `<li>${row[j]}</li>`;
 //             }
-//             s += "</ul></li>";
+//             s += '</ul></li>';
 //         }
 //         else
 //             s += `<li>${row}</li>`;
@@ -81,4 +84,7 @@ function generateTab(row,col) {
     }
 }
 generateTab(10,10);
+
+
+
 })();
